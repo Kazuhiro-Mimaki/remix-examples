@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
+  extends: [
+    "@remix-run/eslint-config",
+    "@remix-run/eslint-config/node",
+    "turbo",
+    "prettier",
+  ],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
   },

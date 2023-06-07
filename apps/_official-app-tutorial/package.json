@@ -1,10 +1,12 @@
 {
+  "name": "_official-app-tutorial",
   "private": true,
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
+    "lint": "eslint --ext .ts,.tsx .",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -14,7 +16,8 @@
     "@remix-run/serve": "^1.17.0",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.17.0",
@@ -22,7 +25,9 @@
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.38.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
   },
   "engines": {
     "node": ">=14"
