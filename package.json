@@ -3,9 +3,11 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:eslint": "eslint --max-warnings 0 \"**/*.ts*\"",
     "lint:prettier": "prettier --check \"**/*.{js,ts,tsx,md}\"",
-    "lint:prettier:fix": "prettier --write \"**/*.{js,ts,tsx,md}\""
+    "fix:eslint": "eslint --fix --max-warnings 0 \"**/*.ts*\"",
+    "fix:prettier": "prettier --write \"**/*.{js,ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
