@@ -4,10 +4,10 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:eslint": "eslint --max-warnings 0 \"**/*.ts*\"",
-    "lint:prettier": "prettier --check \"**/*.{js,ts,tsx,md}\"",
-    "fix:eslint": "eslint --fix --max-warnings 0 \"**/*.ts*\"",
-    "fix:prettier": "prettier --write \"**/*.{js,ts,tsx,md}\""
+    "lint:eslint": "eslint --max-warnings 0  \"**/*.{js,ts,tsx}\"",
+    "lint:prettier": "prettier --check \"**/*.{js,ts,tsx}\"",
+    "fix:eslint": "eslint --fix --max-warnings 0  \"**/*.{js,ts,tsx}\"",
+    "fix:prettier": "prettier --write \"**/*.{js,ts,tsx}\""
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
