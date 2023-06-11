@@ -3,6 +3,7 @@
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "build": {
+      "env": ["NODE_ENV"],
       "dependsOn": ["^build"],
       "outputs": ["dist/**", "storybook-static/**"]
     },
